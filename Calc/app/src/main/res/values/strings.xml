@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">Calc</string>
+    <string name="app_name">Calculator</string>
+    <string name="button_clear">C</string>
+    <string name="button_sign">+/-</string>
+    <string name="button_percent">%</string>
+    <string name="button_div">÷</string>
+    <string name="button_d7">7</string>
+    <string name="button_d8">8</string>
+    <string name="button_d9">9</string>
+    <string name="button_mul">×</string>
+    <string name="button_d4">4</string>
+    <string name="button_d5">5</string>
+    <string name="button_d6">6</string>
+    <string name="button_sub">-</string>
+    <string name="button_d1">1</string>
+    <string name="button_d2">2</string>
+    <string name="button_d3">3</string>
+    <string name="button_add">+</string>
+    <string name="button_d0">0</string>
+    <string name="button_eqv">=</string>
+    <string name="button_point">.</string>
+    <string name="expression_default" />
+    <string name="result_default" />
 </resources>

@@ -1,7 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:weightSum="8"
+    tools:context=".CalculatorActivity"
+    android:orientation="vertical"
+    android:background="@color/background_dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/expression_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:scrollbars="horizontal"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/expression"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:text="@string/expression_default"
+                android:textSize="@dimen/expression_text_size"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textIsSelectable="true" />
+
+        </HorizontalScrollView>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:rowCount="4"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:id="@+id/gridLayout"
+            android:layout_gravity="end">
+
+            <Button
+                android:text="@string/button_clear"
+                style="@style/ActionButton"
+                android:id="@+id/clear"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d7"
+                style="@style/DigitalButton"
+                android:id="@+id/d7"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d8"
+                style="@style/DigitalButton"
+                android:id="@+id/d8"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d9"
+                style="@style/DigitalButton"
+                android:id="@+id/d9"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_div"
+                style="@style/ActionButton"
+                android:id="@+id/div"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_sign"
+                style="@style/ActionButton"
+                android:id="@+id/sign"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d4"
+                style="@style/DigitalButton"
+                android:id="@+id/d4"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d5"
+                style="@style/DigitalButton"
+                android:id="@+id/d5"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d6"
+                style="@style/DigitalButton"
+                android:id="@+id/d6"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_mul"
+                style="@style/ActionButton"
+                android:id="@+id/mul"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_percent"
+                style="@style/ActionButton"
+                android:id="@+id/percent"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d1"
+                style="@style/DigitalButton"
+                android:id="@+id/d1"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d2"
+                style="@style/DigitalButton"
+                android:id="@+id/d2"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d3"
+                style="@style/DigitalButton"
+                android:id="@+id/d3"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_sub"
+                style="@style/ActionButton"
+                android:id="@+id/sub"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_eqv"
+                style="@style/ActionButton"
+                android:id="@+id/eqv"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_d0"
+                style="@style/DigitalButton"
+                android:id="@+id/d0"
+                android:layout_columnWeight="1"
+                android:layout_columnSpan="2"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_point"
+                style="@style/ActionButton"
+                android:id="@+id/point"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+            <Button
+                android:text="@string/button_add"
+                style="@style/ActionButton"
+                android:id="@+id/add"
+                android:layout_columnWeight="1"
+                android:minHeight="38dp"
+                android:minWidth="58dp" />
+
+        </GridLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/result_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:scrollbars="horizontal"
+            android:fillViewport="true"
+            android:fadeScrollbars="false"
+            android:layout_above="@+id/gridLayout"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:text="@string/result_default"
+                android:textSize="@dimen/result_text_size"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textIsSelectable="true" />
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
 
 </LinearLayout>

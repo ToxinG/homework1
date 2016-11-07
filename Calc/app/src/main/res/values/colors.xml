@@ -2,5 +2,9 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="action_button_grey">#3c3c3c</color>
+    <color name="digit_button_grey">#626262</color>
+    <color name="background_dark">#2b2b2b</color>
+    <color name="button_edges">#002b2b2b</color>
 </resources>
