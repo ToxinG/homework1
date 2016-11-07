@@ -138,8 +138,6 @@ public class CalculatorActivity extends AppCompatActivity {
                     resStr = "";
                 else {
                     resStr = resStr.substring(0, resStr.length() - 1);
-                    if (!Character.isDigit(resStr.charAt(resStr.length() - 1)))
-                        resStr = resStr.substring(0, resStr.length() - 1);
                 }
                 refresh();
             }
